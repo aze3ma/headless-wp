@@ -1,0 +1,27 @@
+{
+	"name": "headless-wp",
+	"version": "0.1.0",
+	"private": true,
+	"license": "MIT",
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test --env=jsdom",
+		"eject": "react-scripts eject",
+		"precommit": "lint-staged"
+	},
+	"lint-staged": {
+		"src/**/*.{js,jsx,json,css}": ["prettier --write", "git add"]
+	},
+	"dependencies": {
+		"react": "^16.3.1",
+		"react-dom": "^16.3.1",
+		"react-scripts": "1.1.4"
+	},
+	"devDependencies": {
+		"eslint-config-prettier": "^2.9.0",
+		"eslint-plugin-prettier": "^2.6.0",
+		"husky": "^0.14.3",
+		"lint-staged": "^7.0.4"
+	}
+}
