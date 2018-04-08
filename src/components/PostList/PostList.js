@@ -18,16 +18,16 @@ class PostList extends Component {
 		});
 	}
 
+	renderPostList() {
+		return this.state.posts.map(post => <PostItem key={post.id} id={post.id} post={post} />);
+	}
+
 	render() {
 		console.log(this.state);
 		return (
 			<div className="posts">
 				<ul className="posts__list">
-					<li className="posts__item">
-						{this.state.posts.map(post => {
-							return <PostItem key={post.id} post={post} />;
-						})}
-					</li>
+					<li className="posts__item">{this.renderPostList()}</li>
 				</ul>
 			</div>
 		);

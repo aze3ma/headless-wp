@@ -10,12 +10,12 @@ const Header = () => (
 		<nav className="navbar">
 			<ul className="navbar__list">
 				<li className="navbar__item">
-					<NavLink to="/" activeStyle={{ color: 'red' }} className="Navnavbar__link">
+					<NavLink to="/" exact activeStyle={{ color: 'red' }} className="Navnavbar__link">
 						Home
 					</NavLink>
 				</li>
 				<li className="navbar__item">
-					<NavLink to="/posts" activeStyle={{ color: 'red' }} className="navbar__link">
+					<NavLink to="/posts" exact activeStyle={{ color: 'red' }} className="navbar__link">
 						Posts
 					</NavLink>
 				</li>
