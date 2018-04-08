@@ -1,0 +1,24 @@
+header {
+	display: flex;
+	justify-content: space-between;
+	line-height: 60px;
+	flex: 1;
+
+	.logo {
+		margin: 0;
+	}
+
+	.navbar {
+		&__list {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			li + li {
+				margin-left: 25px;
+			}
+		}
+		&__item {
+			display: inline-block;
+		}
+	}
+}

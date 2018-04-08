@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import PostItem from '../PostItem/PostItem';
-import './PostList.css';
+import PostItem from './PostItem';
 
 class PostList extends Component {
 	constructor(props) {

@@ -1,6 +1,5 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import './Header.css';
 
 const Header = () => (
 	<header>
@@ -8,7 +7,7 @@ const Header = () => (
 			<a href="">Headless WP</a>
 		</h1>
 		<nav className="navbar">
-			<ul className="navbar__list">
+			<ul className="navbar__list list list-pipe-separator">
 				<li className="navbar__item">
 					<NavLink to="/" exact activeStyle={{ color: 'red' }} className="Navnavbar__link">
 						Home
