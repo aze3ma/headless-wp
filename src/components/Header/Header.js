@@ -1,4 +1,6 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+import './Header.css';
 
 const Header = () => (
 	<header>
@@ -8,10 +10,14 @@ const Header = () => (
 		<nav className="navbar">
 			<ul className="navbar__list">
 				<li className="navbar__item">
-					<a href="" className="navbar__link">Home</a>
+					<NavLink to="/" activeStyle={{ color: 'red' }} className="Navnavbar__link">
+						Home
+					</NavLink>
 				</li>
 				<li className="navbar__item">
-					<a href="" className="navbar__link">Posts</a>
+					<NavLink to="/posts" activeStyle={{ color: 'red' }} className="navbar__link">
+						Posts
+					</NavLink>
 				</li>
 			</ul>
 		</nav>
