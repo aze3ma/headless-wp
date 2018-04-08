@@ -13,9 +13,9 @@ class App extends Component {
 			<div className="App">
 				<Header />
 				<Switch>
-					<Route path="/" exact strict component={Home} />
-					<Route path="/posts" exact strict component={PostList} />
-					<Route path="/posts/:id" exact strict component={PostItem} />
+					<Route path="/" exact component={Home} />
+					<Route path="/posts" component={PostList} />
+					<Route path="/posts/:id" component={PostItem} />
 				</Switch>
 				<Footer />
 			</div>
