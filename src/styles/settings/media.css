@@ -1,0 +1,14 @@
+:root {
+	--mobile: '(max-width: 767px)';
+	--tablet: '(min-width: 768px) and (max-width: 1200px)';
+	--tablet-mobile: '(max-width: 950px)';
+	--dark-yellow: #b79b3a;
+	--desktop: '(min-width: 1200px) and (max-width: 1440px)';
+}
+
+.mobile-only {
+	display: none;
+	@media (var(--mobile)) {
+		display: block;
+	}
+}
